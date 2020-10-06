@@ -1,0 +1,33 @@
+{
+  "name": "@hydreio/pino-human",
+  "version": "1.0.0",
+  "description": "A pino prettifier for humans",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "pino-human": "bin.js"
+  },
+  "scripts": {
+    "format": "prettier $PWD/\"**/*.js\" --no-semi --single-quote --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HydreIO/pino-human.git"
+  },
+  "keywords": [
+    "pino"
+  ],
+  "author": "Hydre",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/HydreIO/pino-human/issues"
+  },
+  "homepage": "https://github.com/HydreIO/pino-human#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "split2": "^3.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}
