@@ -1,5 +1,5 @@
 {
-  "name": "@hydreio/pino-human",
+  "name": "@hydre/pino-human",
   "version": "1.0.0",
   "description": "A pino prettifier for humans",
   "main": "index.js",
