@@ -40,7 +40,7 @@ function format_name(name = '') {
 
   return chalk
     .ansi256(COLORS[hash % COLORS.length])
-    .bold(name.padEnd(NAME_LEN, ' ').slice(0, NAME_LEN))
+    .bold(name.padStart(NAME_LEN, ' ').slice(0, NAME_LEN))
 }
 
 const LEVEL_LEN = 3
