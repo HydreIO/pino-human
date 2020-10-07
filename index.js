@@ -20,7 +20,7 @@ const TRACE = 10
 const TIMESTAMP_LEN = 10
 const start_time = Date.now()
 function format_time(time) {
-  return chalk.gray(
+  return chalk.dim(
     (time - start_time)
       .toString()
       .padStart(TIMESTAMP_LEN, '0')
