@@ -8,7 +8,14 @@ pipeline(
   process.stdin,
   split(),
   async function* (input) {
-    for await (const line of input) yield pretty(line)
+    for await (const line of input) {
+      try {
+        yield pretty(line)
+      } catch {
+        yield line
+        yield '\n'
+      }
+    }
   },
   process.stdout,
   (err) => {
