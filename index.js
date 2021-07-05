@@ -39,7 +39,7 @@ function format_name(name = '') {
   const hash = string_hash(name)
 
   return chalk
-    .ansi256(COLORS[hash % COLORS.length])
+    .ansi256(COLORS[Math.abs(hash) % COLORS.length])
     .bold(name.padStart(NAME_LEN, ' ').slice(0, NAME_LEN))
 }
 
