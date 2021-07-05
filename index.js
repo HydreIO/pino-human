@@ -58,7 +58,7 @@ function format_level(level) {
 }
 
 const LINE_SPACER = ' '.repeat(TIMESTAMP_LEN + 1 + NAME_LEN + LEVEL_LEN)
-function format_msg(msg, level) {
+function format_msg(msg = '', level) {
   const colors = {
     [FATAL]: chalk.bold.redBright,
     [ERROR]: chalk.bold.redBright,
