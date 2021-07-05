@@ -1,6 +1,6 @@
 {
   "name": "@hydre/pino-human",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A pino prettifier for humans",
   "main": "index.js",
   "type": "module",
