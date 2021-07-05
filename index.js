@@ -19,7 +19,7 @@ const TRACE = 10
 
 const TIMESTAMP_LEN = 10
 const start_time = Date.now()
-function format_time(time) {
+function format_time(time = Date.now()) {
   return chalk.dim(
     (time - start_time)
       .toString()
