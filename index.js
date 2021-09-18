@@ -18,8 +18,9 @@ const DEBUG = 20
 const TRACE = 10
 
 const TIMESTAMP_LEN = 10
-const start_time = Date.now()
+let start_time = null
 function format_time(time = Date.now()) {
+  if (start_time === null) start_time = time
   return chalk.dim(
     (time - start_time)
       .toString()
