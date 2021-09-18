@@ -30,7 +30,7 @@ npm install @hydre/pino-human
 
 ## Usage
 ```
-node app.js | npx pino-human
+node app.js | pino-human
 ```
 
 ## License
