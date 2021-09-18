@@ -19,6 +19,6 @@ pipeline(
   },
   process.stdout,
   (err) => {
-    throw err
+    if (err) throw err
   }
 )
